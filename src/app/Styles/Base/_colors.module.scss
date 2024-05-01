@@ -1,0 +1,111 @@
+// Colors
+$primary: #037a92;
+$dark-blue: #1e3b5b;
+$dark-blue2: #284d5d;
+$bright-yellow: #ffcc00;
+$light-yellow: #fefbf2;
+$bright-blue: #257a9e;
+$black: #1d1f23;
+$black2: #8d8d8d;
+$off-black: #717171;
+$light: #eef1f7;
+$light2: #e8eaea;
+$white: #fff;
+$light-white: #ffffff1a;
+$dark-white: #f7f6f3;
+$offset-white: #b4b4b4;
+$light-primary: #010101;
+$light-blue: #d0eaec;
+$light-gray: #d1d1d1;
+$lightest-grey: #f4f6f7;
+$charcoal: #222222;
+$charcoal-grey: #313640;
+$off-grey: #00000026;
+
+$charcoal-dark: #1e2021;
+$grey: #959fab;
+$light-grey: #e2e2e2;
+$warm-grey: #9b9b9b;
+$off-white: #eeeeee;
+$nobel-gray: #a09f9f;
+$bg-light-warm: #f7f6f3;
+$bg-warm: #fcfcfc;
+$bg-dark-gray: #f9f9f9;
+$bg-charcoal: #2a2e31;
+$light-green: #418a41;
+$green: #149d4a;
+$light-black: #1a1919;
+$primary-color: #003466;
+$light-cyan: #0ca39b;
+$navi-blue: #1f272e;
+$red: #ff0000;
+$white-fade: #ffffff4d;
+$nero: #1e1e1e;
+$dark-gray: #2222224a;
+$solid-black: #000000;
+$bg-off-white: #f5f5f5;
+$bg-light-blue: #cde7ea;
+$medium-gray: #5b5b5b;
+$amour: #F05D4E;
+
+// Presets
+$disabled: #cccccc;
+
+// Opacity
+$bg-warm-99: #fcfcfc99;
+$dark-gray-80: #c6c6c680;
+$solid-black-0d: #0000000d;
+$solid-black-80: #00000080;
+$solid-black-2b: #0000002b;
+
+// Gradients
+$primary-gradient: linear-gradient(
+  148.29deg,
+  $primary -2.7%,
+  $light-cyan 102.07%
+);
+$secondary-gradient: linear-gradient(
+  107.02deg,
+  rgba(40, 77, 93, 0.1) -16.09%,
+  rgba(3, 121, 144, 0.1) 50.82%,
+  rgba(0, 177, 175, 0.1) 119.13%
+);
+$progress-gradient: linear-gradient(
+  107.02deg,
+  $dark-blue2 -16.09%,
+  #037990 50.82%,
+  #00B1AF 119.13%
+);
+$darkShadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
+
+:export {
+  primary: $primary;
+  darkBlue: $dark-blue;
+  brightYellow: $bright-yellow;
+  lightYellow: $light-yellow;
+  black: $black;
+  light: $light;
+  white: $white;
+  lightPrimary: $light-primary;
+  lightBlue: $light-blue;
+  lightGray: $light-gray;
+  lightestGrey: $lightest-grey;
+  warm-grey: $warm-grey;
+  charcoal: $charcoal;
+  charcoalGrey: $charcoal-grey;
+  charcoalDark: $charcoal-dark;
+  grey: $grey;
+  lightGrey: $light-grey;
+  offWhite: $off-white;
+  nobelGray: $nobel-gray;
+  bg-warm: $bg-warm;
+  bg-dark-gray: $bg-dark-gray;
+  bg-charcoal: $bg-charcoal;
+  light-green: $light-green;
+  primary-gradient: $primary-gradient;
+  dark-shadow: $darkShadow;
+  mediumGray: $medium-gray;
+  offGrey: $off-grey;
+  lightWhite: $light-white;
+  amour: $amour;
+}

@@ -1,0 +1,17 @@
+@use "@Styles/Base" as *;
+
+.container {
+    -ms-overflow-style: none; // Internet Explorer 10+
+    scrollbar-width: none; // Firefox
+
+    &::-webkit-scrollbar {
+        display: none; // Safari and Chrome
+    }
+}
+
+.navigation_bar {
+    background: linear-gradient(180deg, rgba(242, 202, 136, 0.88) -27.7%, rgba(255, 255, 255, 0.88) 119.23%);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}

@@ -1,0 +1,67 @@
+@use "./variables.module.scss" as *;
+
+// media queries.
+@mixin responsive($screen) {
+  @if $screen == $screen-xms {
+    @media screen and (min-width: #{$screen-xms}px) and (max-width: #{$screen-xm}px) {
+      @content;
+    }
+  }
+
+  @if $screen == $screen-s {
+    @media only screen and (min-width: #{$screen-s}px) {
+      @content;
+    }
+  }
+
+  @if $screen == $screen-sm {
+    @media only screen and (min-width: #{$screen-sm}px) {
+      @content;
+    }
+  }
+
+  @if $screen == $screen-md {
+    @media only screen and (min-width: #{$screen-md}px) {
+      @content;
+    }
+  }
+
+  @if $screen == $screen-lg {
+    @media only screen and (min-width: #{$screen-lg}px) {
+      @content;
+    }
+  }
+
+  @if $screen == $screen-xl {
+    @media only screen and (min-width: #{$screen-xl}px) {
+      @content;
+    }
+  }
+}
+
+// container
+@mixin container {
+  max-width: calc(1320px + 2 * 60px);
+  margin: 0 auto;
+  padding: 0 16px;
+  @include responsive($screen-md) {
+    padding: 0 24px;
+  }
+  @include responsive($screen-lg) {
+    padding: 0 60px;
+  }
+}
+
+// hide scrollbar
+@mixin hideScroll {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge add Firefox */
+  & {
+    -ms-overflow-style: none;
+    scrollbar-width: none; /* Firefox */
+  }
+}
